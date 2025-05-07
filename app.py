@@ -3,7 +3,9 @@ import streamlit as st
 from semantic_kernel.contents.chat_message_content import ChatMessageContent
 from semantic_kernel.contents.utils.author_role import AuthorRole
 from src.mas import Orchestrator, MultiAgent
+from dotenv import load_dotenv
 
+load_dotenv()
 st.set_page_config(
     page_title="AI Multi-Agent Presentation Builder",
     page_icon=":robot_face:",
